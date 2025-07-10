@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 880px;
+    background-position: 90% -25%;
+}
+
+
+@media (max-width:576px){
+    body{
+        background-position: 50px -50px;
+        background-size: 500px;
+    }
+}
+
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+body {
+  overflow-x: hidden;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+.hamburger-top,.hamburger-middle,.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: white;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+.open.hamburger-middle{
+    display: none;
+}
+.open.hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.open.hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+
+.circle-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+.circle-container img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 9999px;
+  border: 3px solid white;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+    .center-img {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 150px;
+      left: 145px;
+      border-radius: 9999px;
+      border: 5px solid white;
+      z-index: 10;
+    }
