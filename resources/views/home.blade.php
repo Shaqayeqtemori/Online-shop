@@ -198,6 +198,30 @@
         </div>
     </div>
   </div>
+  {{-- posts --}}
+  <div class="text-center mt-6">
+    <a href="/posts/create" class="bg-orange-600 text-white px-6 py-2 rounded hover:bg-orange-200">Add your Post</a>
+  </div>
+  <h3 class="text-2xl font-bold text-center">Recent Posts</h3>
+  <div class="grid grid-cold-1 md:grid-cols-3ngap-4">
+    @foreach ($posts as $post)
+    <div class="border rounded p-4">
+        <h2 class="font-bold text-lg">
+            {{$post->title}}
+        </h2>
+        <p>
+            {{$post->body}}
+        </p>
+        <p class="text-sm text-gray-600">
+            {{$post->body}}
+            -{{$post->email}}
+        </p>
+        @if($post->image)
+        <img src="{{asset('storage/$post->image')}}">
+        @endif
+    </div>
+    @endforeach
+  </div>
   <script src="{{ asset('js/main.js') }}"></script>
   <script src="{{ asset('js/java.js') }}"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
