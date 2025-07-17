@@ -198,6 +198,106 @@
         </div>
     </div>
   </div>
+  {{-- products --}}
+   <div class="rounded-xl h-auto w-[100%]  max-w-4xl  bg-white p-10">
+        <!-- flex container -->
+        <div class="container flex  justify-center items-center px-6 mx-auto mt-3 ">
+            <!-- items -->
+            <div class="flex flex-col items-center space-y-2 mt-4 mb-4">
+                <h1 class="w-full text-center text-2xl md:text-4xl font-bold">
+                Our Products
+                </h1>
+                <p class="max-w-sm text-center text-gray-600">
+                Discover great new Dresses and clothes here!
+                </p>
+            </div>
+        </div>
+        <!-- cards -->
+        <div class="max-w-9xl mx-auto mt-3">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-9">
+                <!-- card1 -->
+                <div class="bg-gray-100  rounded-xl bg-gray-100 overflow-hidden" style="height: 430px;">
+                    <div class="relative">
+                        <!-- img -->
+                        <img src="{{ asset('17366867155960.jpg') }}" class="w-full h-60">
+                        <!-- icon -->
+                        <div class="absolute top-2 right-2 bg-gray-600 text-white p-2 rounded-full">
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Men Clothes</h3>
+                        <p class="text-gray-600">It is in different colors and sizes</p>
+                            <div class="flex items-center justify-center md:justify-start">
+                            <a href="#" class="p-3  px-6 pt-2  bg-gray-500 text-white rounded-full baseline ">
+                            Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class=" rounded-xl bg-gray-100 overflow-hidden" style="height: 430px;">
+                    <div class="relative">
+                        <!-- img -->
+                        <img src="{{ asset('img.jpg') }}" class="w-full h-60">
+                        <!-- icon -->
+                        <div class="absolute top-2 right-2 bg-gray-600 text-white p-2 rounded-full">
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Women Clothes</h3>
+                        <p class="text-gray-600">It is the greates clothes here!</p>
+                        <div class="flex items-center justify-center md:justify-start">
+                            <a href="#" class="p-3  px-6 pt-2  bg-gray-500 text-white rounded-full baseline ">
+                            Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div class=" rounded-xl bg-gray-100 overflow-hidden" style="height: 430px;">
+                    <div class="relative">
+                        <!-- img -->
+                        <img src="{{ asset('k.jpg') }}" class="w-full h-60">
+                        <!-- icon -->
+                        <div class="absolute top-2 right-2 bg-gray-600 text-white p-2 rounded-full">
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Children Clothes</h3>
+                        <p class="text-gray-600">It is the greates clothes here!</p>
+                            <div class="flex items-center justify-center md:justify-start">
+                            <a href="#" class="p-3  px-6 pt-2  bg-gray-500 text-white rounded-full baseline ">
+                            Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card4-->
+                <div class=" rounded-xl bg-gray-100 overflow-hidden" style="height: 430px;">
+                    <div class="relative">
+                        <!-- img -->
+                        <img src="{{ asset('k.jpg') }}" class="w-full h-60">
+                        <!-- icon -->
+                        <div class="absolute top-2 right-2 bg-gray-600 text-white p-2 rounded-full">
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <!-- title -->
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Women Clothes</h3>
+                        <p class="text-gray-600">It is the greates clothes here!</p>
+                        <div class="flex items-center justify-center md:justify-start">
+                            <a href="#" class="p-3  px-6 pt-2  bg-gray-500 text-white rounded-full baseline ">
+                            Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
   {{-- posts --}}
   <div class="text-center mt-6">
     <a href="/posts/create" class="bg-orange-600 text-white px-6 py-2 rounded hover:bg-orange-200">Add your Post</a>

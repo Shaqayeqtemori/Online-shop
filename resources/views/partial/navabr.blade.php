@@ -38,10 +38,11 @@
             <a href="{{route('about')}}" class="text-orange-700 hover:text-orange-600 py-2">About</a>
             <!-- Dropdown -->
             <div class="relative group">
-                <a href="#" class="text-orange-700 hover:text-orange-600">Our Category</a>
+                <a href="{{route('products')}}" class="text-orange-700 hover:text-orange-600">Our Products</a>
                 <div class="absolute hidden group-hover:block bg-white text-gray-800 mt-2 py-2 w-40 shadow-lg rounded z-50">
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Men Clothes</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Women Clothes</a>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Children Clothes</a>
                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Children Clothes</a>
                 </div>
             </div>
